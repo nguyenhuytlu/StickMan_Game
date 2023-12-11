@@ -28,6 +28,8 @@ public class EnemyProjectile : Enemy_Damage
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        base.OnTriggerEnter2D(collision);
+        gameObject.SetActive(false);
+
     }
 }
