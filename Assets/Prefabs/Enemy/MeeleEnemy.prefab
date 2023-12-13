@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3563245425636146680}
   - component: {fileID: 7590783321472644641}
   - component: {fileID: 4254574564544745378}
+  - component: {fileID: 3580274635624624989}
   m_Layer: 9
   m_Name: MeeleEnemy
   m_TagString: Enemy
@@ -138,7 +139,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.04068297, y: -0.5729518}
@@ -169,6 +170,8 @@ MonoBehaviour:
   startingHealth: 3
   batTu: 0
   numberOfFlashed: 0
+  components:
+  - {fileID: 4254574564544745378}
 --- !u!114 &4254574564544745378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,9 +186,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 2.5
-  colliderDistance: 0.452
   damage: 2
+  colliderDistance: 0.452
   boxCollider: {fileID: 3563245425636146680}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+--- !u!114 &3580274635624624989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6541021965554819957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedb75262c502bb4ebb126090bb09961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
