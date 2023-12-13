@@ -5,8 +5,12 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField]private float attackCooldown;
-    public Transform firePoint;
+    [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireBalls;
+    public AudioSource aus;
+    [SerializeField] private AudioClip fireballSound;
+
+
     private Animator anim;
     private PlayerController playerController;
     private float cooldownTimer = Mathf.Infinity;
@@ -26,11 +30,18 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Attack()
     {
+
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 
         fireBalls[FindFireball()].transform.position = firePoint.position;
         fireBalls[FindFireball()].GetComponent<Fire>().SetDirection(Mathf.Sign(transform.localScale.x));
+   
+        // khi danh co am thanh
+        if (aus != null && fireballSound != null)
+        {
+            aus.PlayOneShot(fireballSound);
+        }
     }
     private int FindFireball()
     {

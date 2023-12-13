@@ -206,6 +206,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  fireballSound: {fileID: 8300000, guid: 2f9c68e4fb9f55348b1fb7a9a9419d01, type: 3}
 --- !u!95 &1421938185661366468
 Animator:
   serializedVersion: 5
