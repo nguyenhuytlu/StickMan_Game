@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 1
   range: 2
+  colliderDistance: 0
   damage: 2
   boxCollider: {fileID: 42903349}
   playerLayer:
@@ -2652,6 +2653,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &488830618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.015092299
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 882551206826733826, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541021965554819957, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_Name
+      value: MeeleEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158137905500958955, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158137905500958955, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -783455879
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
 --- !u!1 &494270851
 GameObject:
   m_ObjectHideFlags: 0
@@ -11615,3 +11681,4 @@ SceneRoots:
   - {fileID: 4555084852956149308}
   - {fileID: 1564591648}
   - {fileID: 239547200}
+  - {fileID: 488830618}
