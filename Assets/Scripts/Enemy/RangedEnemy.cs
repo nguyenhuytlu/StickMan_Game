@@ -1,11 +1,15 @@
 using UnityEngine;
 
-public class MeleeEnemy : MonoBehaviour
+public class RangedEnemy : MonoBehaviour
 {
-    [Header ("Attack Parameters")]
+    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
+
+    [Header("Ranged Attack")]
+    [SerializeField]private Transform firePoint;
+    [SerializeField] private GameObject[] fireBalls;
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
@@ -15,12 +19,9 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
+    //references
     private Animator anim;
-    private Health playerHealth;
-
     private EnemyPatrol enemyPatrol;
-
-
 
     private void Awake()
     {
@@ -33,10 +34,10 @@ public class MeleeEnemy : MonoBehaviour
 
         if (PlayerInSight())
         {
-            if(cooldownTimer >= attackCooldown)
+            if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
-                anim.SetTrigger("meeleattack");
+                anim.SetTrigger("rangedAttack");
             }
         }
 
@@ -44,29 +45,36 @@ public class MeleeEnemy : MonoBehaviour
             enemyPatrol.enabled = !PlayerInSight();
 
     }
-
+    private void RangedAttack()
+    {
+        cooldownTimer = 0;
+        fireBalls[FindFireBall()].transform.position = firePoint.position;
+        fireBalls[FindFireBall()].GetComponent<EnemyProjectile>().ActivateProjectile();
+        //shoot fire
+    }
+    private int FindFireBall()
+    {
+        for (int i = 0; i < fireBalls.Length; i++)
+        {
+            if (fireBalls[i].activeInHierarchy)
+                return i;
+        }
+        return 0;
+           
+    }
     private bool PlayerInSight()
     {
         RaycastHit2D hit =
-            Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance, 
-            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y,boxCollider.bounds.size.z)
+            Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z)
            , 0, Vector2.left, 0, playerLayer);
 
-        if(hit.collider != null) 
-            playerHealth = hit.transform.GetComponent<Health>();
-        return hit.collider !=null;
+        return hit.collider != null;
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance, 
+        Gizmos.DrawCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
-    }
-    private void DamagePlayer()
-    {
-        if (PlayerInSight())
-        {
-            playerHealth.TakeDamage(damage);
-        }
     }
 }
