@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     private float speed = 10f;
-    private float jumpPower = 20f;
+    private float jumpPower = 12f;
     public LayerMask groundLayer;
     public LayerMask wallLayer;
     private Rigidbody2D body;
@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    [Header("SFX")]
+    [SerializeField] private AudioClip jumpSound;
+
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -55,6 +59,7 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        SoundManager.instance.PlaySound(jumpSound);
         if(isGrounded())
         {
         body.velocity = new Vector2(body.velocity.x, jumpPower);

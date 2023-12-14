@@ -9,21 +9,31 @@ public class Firetrap : MonoBehaviour
     [Header("Firetrap Timers")]
     [SerializeField] private float activationDelay;
     [SerializeField] private float activeTime;
+    [Header("SFX")]
+    [SerializeField] private AudioClip fireSound;
     private Animator anim;
     private SpriteRenderer spriteRend;
 
     private bool triggered;// bay hoat dong
     private bool active;// khi bay hoat dong se lam dau nguoi choi
 
+    private Health playerHealth;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
+    private void Update()
+    {
+        if(playerHealth != null && active)
+            playerHealth.TakeDamage(damage);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
+            playerHealth = collision.GetComponent<Health>();
             if(!triggered)           
                 StartCoroutine(ActivateFiretrap());
             if(active)
@@ -32,6 +42,11 @@ public class Firetrap : MonoBehaviour
             }
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.tag == "Player")
+            playerHealth = null;
+    }
     private IEnumerator ActivateFiretrap()
     {
         triggered = true;
@@ -39,6 +54,7 @@ public class Firetrap : MonoBehaviour
 
         // thoi gian delay
         yield return new WaitForSeconds(activationDelay);
+        SoundManager.instance.PlaySound(fireSound);
         spriteRend.color = Color.white;
         active = true;
         anim.SetBool("activated", true);
