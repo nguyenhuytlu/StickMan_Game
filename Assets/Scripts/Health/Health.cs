@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
 
     [Header("iFrames")]
     [SerializeField] private float batTu;
+    [Header("DeadSound")]
+    [SerializeField] private AudioClip deadSound;
     [SerializeField] private int numberOfFlashed;
     private SpriteRenderer spriteRend;
 
@@ -46,6 +48,7 @@ public class Health : MonoBehaviour
                     component.enabled = false;
                 
             dead = true;
+            SoundManager.instance.PlaySound(deadSound);
             }
         }
     }

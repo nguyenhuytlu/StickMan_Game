@@ -6932,6 +6932,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4254574564544745378, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b0d81e2a6d715c47974e954c6a37dd0, type: 3}
     - target: {fileID: 6541021965554819957, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
       propertyPath: m_Name
       value: MeeleEnemy
@@ -6940,6 +6944,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7590783321472644641, guid: 86657783848325c4eac1fcf8dc255ddb, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e27fd40a070d7d645865ce8f3d140d2f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10225,6 +10233,10 @@ PrefabInstance:
       propertyPath: fireBalls.Array.data[9]
       value: 
       objectReference: {fileID: 846703365}
+    - target: {fileID: 931464834656872371, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1361953903104366340, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.99
@@ -10269,6 +10281,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5312995105816554370, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
+      propertyPath: deadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e27fd40a070d7d645865ce8f3d140d2f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10287,6 +10303,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3552715637943059747, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 382566c8c8785d6458b28395914077ec, type: 3}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.63
@@ -10348,6 +10368,10 @@ PrefabInstance:
       propertyPath: damage
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 820869149507889057, guid: 7915a67123f14654f8e224c57f2b0b5a, type: 3}
+      propertyPath: SpikesTrapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f00c970e9d123c0429614e700cbc0869, type: 3}
     - target: {fileID: 6143641292594053217, guid: 7915a67123f14654f8e224c57f2b0b5a, type: 3}
       propertyPath: m_Name
       value: Spikes
