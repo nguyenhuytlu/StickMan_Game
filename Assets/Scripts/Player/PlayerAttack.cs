@@ -7,8 +7,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]private float attackCooldown;
     [SerializeField] private Transform firePoint;
     [SerializeField] private GameObject[] fireBalls;
-    public AudioSource aus;
-    [SerializeField] private AudioClip fireballSound;
 
 
     private Animator anim;
@@ -37,11 +35,6 @@ public class PlayerAttack : MonoBehaviour
         fireBalls[FindFireball()].transform.position = firePoint.position;
         fireBalls[FindFireball()].GetComponent<Fire>().SetDirection(Mathf.Sign(transform.localScale.x));
    
-        // khi danh co am thanh
-        if (aus != null && fireballSound != null)
-        {
-            aus.PlayOneShot(fireballSound);
-        }
     }
     private int FindFireball()
     {
