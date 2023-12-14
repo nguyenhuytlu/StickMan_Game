@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    [Header("SFX")]
+    [SerializeField] private AudioClip jumpSound;
 
 
     private void Awake()
@@ -57,11 +59,11 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        SoundManager.instance.PlaySound(jumpSound);
         if(isGrounded())
         {
         body.velocity = new Vector2(body.velocity.x, jumpPower);
         anim.SetTrigger("jump");
-
         }
         else if ( onWall() && !isGrounded())
         {
