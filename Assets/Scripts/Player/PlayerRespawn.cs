@@ -6,14 +6,23 @@ public class PlayerRespawn : MonoBehaviour
 {
     private Transform currentCheckpoint;
     private Health playerHealth;
+    private UIManager uiManager;
 
     private void Awake()
     {
         playerHealth = GetComponent<Health>();
+        uiManager = FindAnyObjectByType<UIManager>();
     }
 
-    public void Respawn()
+    public void CheckRespawn() 
     {
+        //check diem hoi sinh
+        if (currentCheckpoint == null) {
+            //hien thi man hinh chet
+            uiManager.gameOver();
+            return;
+        }
+
         transform.position = currentCheckpoint.position; // di chuye nguoi choi den diem hoi sinh
         playerHealth.Respawn();// lam lai mau
 
