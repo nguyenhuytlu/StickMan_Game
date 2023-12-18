@@ -41,12 +41,11 @@ public class Health : MonoBehaviour
         {
             if(!dead)
             {
-            anim.SetTrigger("die");
-
             //vo hieu hoa tat ca
             foreach(Behaviour component in components)
                     component.enabled = false;
-                
+            anim.SetBool("grounded", true);
+            anim.SetTrigger("die");
             dead = true;
             SoundManager.instance.PlaySound(deadSound);
             }
@@ -55,6 +54,17 @@ public class Health : MonoBehaviour
     public void addHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
+    }
+    public void Respawn()
+    {
+        dead = false;
+        addHealth(startingHealth);
+        anim.ResetTrigger("die");
+        anim.Play("Idle");
+        StartCoroutine(Invunerability());
+        //kich hoat hanh dong nguoi choi
+        foreach (Behaviour component in components)
+            component.enabled = true;
     }
    
     private IEnumerator Invunerability()
