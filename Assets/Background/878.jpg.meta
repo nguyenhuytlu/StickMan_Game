@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dcfb18df6cc35484da44a570093d014e
+guid: fd51d742c660bdc47b2a3c8c94a11674
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,49 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: png-clipart-sprite-lava-cave-desktop-cartoon-volcano-game-text 1_0
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 251
-        width: 88
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8eefdc645fe94f145afbde13d80e45d7
-      internalID: -1774739583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: png-clipart-sprite-lava-cave-desktop-cartoon-volcano-game-text 1_1
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 134
-        width: 261
-        height: 97
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0773dbb648b84a34a8c2910bcfb4c6f1
-      internalID: -351494742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -161,9 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      png-clipart-sprite-lava-cave-desktop-cartoon-volcano-game-text 1_0: -1774739583
-      png-clipart-sprite-lava-cave-desktop-cartoon-volcano-game-text 1_1: -351494742
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
