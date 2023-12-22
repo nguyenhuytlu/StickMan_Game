@@ -194,7 +194,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.04068297, y: -0.5729518}
@@ -224,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   batTu: 0
+  deadSound: {fileID: 0}
   numberOfFlashed: 0
   components:
   - {fileID: 1034211482668608208}
@@ -243,8 +244,8 @@ MonoBehaviour:
   attackCooldown: 1
   range: 13
   damage: 1
-  firePoint: {fileID: 945728251954498700}
-  fireBalls:
+  firepoint: {fileID: 945728251954498700}
+  fireballs:
   - {fileID: 249751279519673336}
   - {fileID: 2491524564484848122}
   - {fileID: 6869534676472667523}
@@ -308,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  SpikesTrapSound: {fileID: 0}
 --- !u!1 &9207346540276289923
 GameObject:
   m_ObjectHideFlags: 0
