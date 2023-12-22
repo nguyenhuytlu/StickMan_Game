@@ -8,18 +8,21 @@ public class RangedEnemy : MonoBehaviour
     [SerializeField] private int damage;
 
     [Header("Ranged Attack")]
-    [SerializeField]private Transform firePoint;
-    [SerializeField] private GameObject[] fireBalls;
+    [SerializeField] private Transform firepoint;
+    [SerializeField] private GameObject[] fireballs;
 
     [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header("Player Parameters")]
+    [Header("Player Layer")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
-    //references
+    [Header("Fireball Sound")]
+    [SerializeField] private AudioClip fireballSound;
+
+    //References
     private Animator anim;
     private EnemyPatrol enemyPatrol;
 
@@ -28,10 +31,12 @@ public class RangedEnemy : MonoBehaviour
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
     }
+
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
 
+        //Attack only when player in sight?
         if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown)
@@ -43,38 +48,38 @@ public class RangedEnemy : MonoBehaviour
 
         if (enemyPatrol != null)
             enemyPatrol.enabled = !PlayerInSight();
-
     }
+
     private void RangedAttack()
     {
+        SoundManager.instance.PlaySound(fireballSound);
         cooldownTimer = 0;
-        fireBalls[FindFireBall()].transform.position = firePoint.position;
-        fireBalls[FindFireBall()].GetComponent<EnemyProjectile>().ActivateProjectile();
-        //shoot fire
+        fireballs[FindFireball()].transform.position = firepoint.position;
+        fireballs[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
-    private int FindFireBall()
+    private int FindFireball()
     {
-        for (int i = 0; i < fireBalls.Length; i++)
+        for (int i = 0; i < fireballs.Length; i++)
         {
-            if (fireBalls[i].activeInHierarchy)
+            if (!fireballs[i].activeInHierarchy)
                 return i;
         }
         return 0;
-           
     }
+
     private bool PlayerInSight()
     {
         RaycastHit2D hit =
             Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
-            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z)
-           , 0, Vector2.left, 0, playerLayer);
+            new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
+            0, Vector2.left, 0, playerLayer);
 
         return hit.collider != null;
     }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
+        Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
 }

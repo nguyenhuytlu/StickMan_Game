@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Door : MonoBehaviour
+public class LeaveRoom : MonoBehaviour
 {
     public int sceneBuildIndex;
 
@@ -11,10 +11,10 @@ public class Door : MonoBehaviour
     {
         print("Trigger Entered");
 
-        if (collision.tag == "Player")
+        if(collision.tag == "Player")
         {
             print("Switching Scene to" + sceneBuildIndex);
-            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
+            SceneManager.LoadScene(sceneBuildIndex,LoadSceneMode.Single);
         }
     }
 }
