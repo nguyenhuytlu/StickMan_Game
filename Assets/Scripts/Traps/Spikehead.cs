@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class Spikehead : Enemy_Damage
 {
@@ -55,13 +56,13 @@ public class Spikehead : Enemy_Damage
     }
     private void Stop()
     {
-        destination = transform.position; 
+        destination = transform.position; //Set destination as current position so it doesn't move
         attacking = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        Stop(); 
+        Stop(); //Stop spikehead once he hits something
     }
 }
