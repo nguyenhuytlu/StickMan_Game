@@ -7245,6 +7245,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5472378728610542198, guid: bc85ed1722e481d4dbe5780183065ee8, type: 3}
   m_PrefabInstance: {fileID: 1679246289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &826935625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826935626}
+  m_Layer: 0
+  m_Name: hihihih
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826935626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826935625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.233803, y: 16.27244, z: -1.8022339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841534913
 GameObject:
   m_ObjectHideFlags: 0
@@ -11050,6 +11081,8 @@ MonoBehaviour:
   - {fileID: 1374006554}
   - {fileID: 1991693457}
   - {fileID: 1301746383}
+  changeSound: {fileID: 0}
+  interactSound: {fileID: 0}
 --- !u!114 &1341190842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17350,6 +17383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 1836786298}
+  pauseScreen: {fileID: 0}
 --- !u!114 &2005306427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18838,3 +18872,4 @@ SceneRoots:
   - {fileID: 733455051}
   - {fileID: 1758930858}
   - {fileID: 1689325355}
+  - {fileID: 826935626}
