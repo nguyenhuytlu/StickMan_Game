@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SelectionArrow : MonoBehaviour
 {
-    [SerializeField]private RectTransform[] options;
+    [SerializeField] private RectTransform[] options;
+    [SerializeField] private AudioClip changeSound;
+    [SerializeField] private AudioClip interactSound;
     private RectTransform rect;
     private int currentPosition;
     private void Awake()
