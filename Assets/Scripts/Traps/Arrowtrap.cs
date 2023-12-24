@@ -6,17 +6,17 @@ public class Arrowtrap : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] arrows;
+    [SerializeField] private GameObject[] arrows; 
     private float cooldownTimer;
 
     private void Attack()
     {
         cooldownTimer = 0;
-        arrows[FindFireBall()].transform.localScale = firePoint.position;
-        arrows[FindFireBall()].GetComponent<EnemyProjectile>().ActivateProjectile();
+        arrows[FindArrow()].transform.localScale = firePoint.position;
+        arrows[FindArrow()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
 
-    private int FindFireBall()
+    private int FindArrow()
     {
         for (int i = 0;  i < arrows.Length;i++)
         {
