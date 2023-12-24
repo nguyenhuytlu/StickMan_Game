@@ -6292,6 +6292,7 @@ Transform:
   - {fileID: 3737015}
   m_Father: {fileID: 502662794}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+
 --- !u!1 &841534913
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,6 +10282,8 @@ MonoBehaviour:
   - {fileID: 1374006554}
   - {fileID: 1991693457}
   - {fileID: 1301746383}
+  changeSound: {fileID: 0}
+  interactSound: {fileID: 0}
 --- !u!114 &1341190842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16028,6 +16031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 1836786298}
+  pauseScreen: {fileID: 0}
 --- !u!114 &2005306427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17257,3 +17261,4 @@ SceneRoots:
   - {fileID: 502662794}
   - {fileID: 733455051}
   - {fileID: 1758930858}
+
