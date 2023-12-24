@@ -2477,7 +2477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a44ce0de6840524cbcf8ff5c42fdf96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 10
   player: {fileID: 1732230491}
   aheadDistance: 2
   cameraSpeed: 0.25
@@ -3069,7 +3069,6 @@ Transform:
   - {fileID: 345133328}
   - {fileID: 3847963}
   - {fileID: 1534928976}
-  - {fileID: 830260732}
   - {fileID: 1328637050}
   - {fileID: 1477953697}
   - {fileID: 1376946555}
@@ -3411,9 +3410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e00003454511df4c89cb93ca2a37ca4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 0}
-  nextRoom: {fileID: 0}
-  cam: {fileID: 0}
+  sceneBuildIndex: 1
 --- !u!61 &769222908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3489,7 +3486,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 648829357}
+  m_Father: {fileID: 1328637050}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &830260733
 SpriteRenderer:
@@ -5678,6 +5675,7 @@ Transform:
   - {fileID: 1770587885}
   - {fileID: 1543635578}
   - {fileID: 887760017}
+  - {fileID: 830260732}
   m_Father: {fileID: 648829357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351150701
@@ -5868,7 +5866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1387960443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6075,7 +6073,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1477953697}
   - component: {fileID: 1477953700}
-  - component: {fileID: 1477953699}
   - component: {fileID: 1477953701}
   m_Layer: 0
   m_Name: Door
@@ -6099,21 +6096,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 648829357}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1477953699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477953696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e00003454511df4c89cb93ca2a37ca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousRoom: {fileID: 648829357}
-  nextRoom: {fileID: 154632501}
-  cam: {fileID: 519420033}
 --- !u!61 &1477953700
 BoxCollider2D:
   m_ObjectHideFlags: 0

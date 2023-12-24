@@ -1,20 +1,20 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] private Transform previousRoom;
-    [SerializeField] private Transform nextRoom;
-    [SerializeField] private CameraController cam;
+    public int sceneBuildIndex;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        print("Trigger Entered");
+
+        if (collision.tag == "Player")
         {
-            if (collision.transform.position.x < transform.position.x)
-                cam.MoveToNewRoom(nextRoom);
-            else
-                cam.MoveToNewRoom(previousRoom);
+            print("Switching Scene to" + sceneBuildIndex);
+            SceneManager.LoadScene(sceneBuildIndex, LoadSceneMode.Single);
         }
     }
 }
