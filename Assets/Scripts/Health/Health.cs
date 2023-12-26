@@ -1,5 +1,6 @@
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
@@ -20,11 +21,13 @@ public class Health : MonoBehaviour
     [SerializeField]private Behaviour[] components;
     private bool invulnerble;
 
+
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+
     }
 
     public void TakeDamage(float _damage)
