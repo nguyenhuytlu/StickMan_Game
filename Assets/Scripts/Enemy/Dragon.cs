@@ -18,7 +18,6 @@ public class Dragon : MonoBehaviour
     [Header("Attack Sound ")]
     [SerializeField] private AudioClip attackSound;
 
-
     private Animator anim;
     private Health playerHealth;
 
@@ -30,7 +29,6 @@ public class Dragon : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         enemyPatrol = GetComponentInParent<EnemyPatrol>();
-
     }
     private void Update()
     {
