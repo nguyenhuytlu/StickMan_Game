@@ -4306,6 +4306,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TX Tileset Ground_165
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 418
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d44fff3889513459f9d760337e20f4
+      internalID: 829730713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -4391,6 +4412,7 @@ TextureImporter:
       TX Tileset Ground_162: 1892006572
       TX Tileset Ground_163: -1510705326
       TX Tileset Ground_164: 1042860597
+      TX Tileset Ground_165: 829730713
       TX Tileset Ground_17: -1766223703499644226
       TX Tileset Ground_18: 5918128945180904696
       TX Tileset Ground_19: -196723265562317597
