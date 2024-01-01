@@ -169,9 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   batTu: 0
+  deadSound: {fileID: 0}
   numberOfFlashed: 0
   components:
   - {fileID: 4254574564544745378}
+  - {fileID: 1292908857142788380}
 --- !u!114 &4254574564544745378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,12 +188,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 2.5
-  damage: 2
+  damage: 1
   colliderDistance: 0.452
   boxCollider: {fileID: 3563245425636146680}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  attackSound: {fileID: 0}
 --- !u!114 &3580274635624624989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,3 +208,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  SpikesTrapSound: {fileID: 0}
