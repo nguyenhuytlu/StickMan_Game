@@ -2194,8 +2194,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   batTu: 0
-  deadSound: {fileID: 0}
   numberOfFlashed: 0
+  deadSound: {fileID: 8300000, guid: e27fd40a070d7d645865ce8f3d140d2f, type: 3}
+  hurtSound: {fileID: 8300000, guid: f00c970e9d123c0429614e700cbc0869, type: 3}
   components:
   - {fileID: 1034211482668608208}
   - {fileID: 0}

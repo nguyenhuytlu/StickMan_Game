@@ -12,10 +12,13 @@ public class Health : MonoBehaviour
 
     [Header("iFrames")]
     [SerializeField] private float batTu;
-    [Header("DeadSound")]
-    [SerializeField] private AudioClip deadSound;
     [SerializeField] private int numberOfFlashed;
     private SpriteRenderer spriteRend;
+
+    [Header("DeadSound")]
+    [SerializeField] private AudioClip deadSound;
+    [SerializeField] private AudioClip hurtSound;
+
 
     [Header("Components")]
     [SerializeField]private Behaviour[] components;
@@ -38,7 +41,7 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
-            //iframes
+            SoundManager.instance.PlaySound(hurtSound);
         }
         else
         {
