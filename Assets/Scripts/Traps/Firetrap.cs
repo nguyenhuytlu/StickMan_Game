@@ -12,6 +12,9 @@ public class Firetrap : MonoBehaviour
     private Animator anim;
     private SpriteRenderer spriteRend;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip fireTrapSound;
+
     private bool triggered;// bay hoat dong
     private bool active;// khi bay hoat dong se lam dau nguoi choi
 
@@ -52,6 +55,7 @@ public class Firetrap : MonoBehaviour
 
         // thoi gian delay
         yield return new WaitForSeconds(activationDelay);
+        SoundManager.instance.PlaySound(fireTrapSound);
         spriteRend.color = Color.white;
         active = true;
         anim.SetBool("activated", true);
