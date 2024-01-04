@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6703110055121936618}
   m_Layer: 0
   m_Name: SpikeHead
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,10 +172,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  SpikesTrapSound: {fileID: 8300000, guid: f00c970e9d123c0429614e700cbc0869, type: 3}
+  SpikesTrapSound: {fileID: 0}
   speed: 1
   range: 16
   checkDelay: 1
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  impactSound: {fileID: 0}
