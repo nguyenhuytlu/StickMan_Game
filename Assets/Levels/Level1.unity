@@ -4337,10 +4337,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 769222905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e00003454511df4c89cb93ca2a37ca4, type: 3}
+  m_Script: {fileID: 11500000, guid: 408088095fd44e84b91ad20bc5e51233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 1
+  nextLevel: 5
 --- !u!61 &769222908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11922,7 +11922,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 1387960442}
+  gameOverSound: {fileID: 0}
   pauseScreen: {fileID: 664548740}
+  winScreen: {fileID: 0}
+  winSound: {fileID: 0}
 --- !u!1 &2015556621
 GameObject:
   m_ObjectHideFlags: 0
