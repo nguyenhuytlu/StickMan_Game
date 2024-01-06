@@ -12196,7 +12196,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 1387960442}
+  gameOverSound: {fileID: 0}
   pauseScreen: {fileID: 664548740}
+  winScreen: {fileID: 0}
+  winSound: {fileID: 0}
 --- !u!1 &2015556621
 GameObject:
   m_ObjectHideFlags: 0
