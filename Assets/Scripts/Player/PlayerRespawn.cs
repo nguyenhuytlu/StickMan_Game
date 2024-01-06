@@ -20,7 +20,7 @@ public class PlayerRespawn : MonoBehaviour
         //check diem hoi sinh
         if (currentCheckpoint == null) {
             //hien thi man hinh chet
-            uiManager.gameOver();
+            uiManager.GameOver();
             return;
         }
 

@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,11 +29,13 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float wallJumpCooldown;
     private float horizontalInput;
+    private UIManager uiManager;
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        uiManager = FindObjectOfType<UIManager>();
     }
 
     private void Update()
@@ -110,9 +115,16 @@ public class PlayerController : MonoBehaviour
     {
 
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Win")
+        {
+            uiManager.GameWin();
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+       
     }
     private bool isGrounded()
     {
