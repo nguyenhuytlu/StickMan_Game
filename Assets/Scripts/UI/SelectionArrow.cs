@@ -13,32 +13,44 @@ public class SelectionArrow : MonoBehaviour
     {
         rect = GetComponent<RectTransform>();
     }
+    private void OnEnable()
+    {
+        currentPosition = 0;
+        ChangePosition(0);
+    }
     private void Update()
     {
         //thay doi vi tri lua chon cua mui ten
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
-            ChangePositon(-1);
+            ChangePosition(-1);
         if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)) 
-            ChangePositon(1);
+            ChangePosition(1);
         if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.E))
             Interact();
         //
 
     }
-    private void ChangePositon(int _change)
+    private void ChangePosition(int _change)
     {
         currentPosition += _change;
+        if(_change != 0)
+        {
+            SoundManager.instance.PlaySound(changeSound);
+        }
         if(currentPosition < 0)
             currentPosition = options.Length - 1;
         else if(currentPosition > options.Length - 1)
             currentPosition = 0;
-
-        // gan vi tri cua Y vao mui ten
-        rect.position = new Vector3(rect.position.x, options[currentPosition].position.y, 0);
+        AssignPosition();
+    }
+    private void AssignPosition()
+    {
+        //Assign the Y position of the current option to the arrow (basically moving it up and down)
+        rect.position = new Vector3(rect.position.x, options[currentPosition].position.y);
     }
     private void Interact()
     {
-        //sound
+        SoundManager.instance.PlaySound(interactSound);
         options[currentPosition].GetComponent<Button>().onClick.Invoke();
     }
 }
