@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Levels/Menu.unity
     guid: 869e7db400a5bab4fb319d4c9ccc13d1
   - enabled: 1
+    path: Assets/Levels/CharactorSelection.unity
+    guid: b93b7f56ae75f724a915fe9398ddd57e
+  - enabled: 1
     path: Assets/Levels/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Levels/Level1 PL2.unity
+    guid: 2778d81bf32c9fb448d7a9a58bf2007f
   - enabled: 1
     path: Assets/Levels/Level2.unity
     guid: 1e821f7178f39864ca78b02c23d3d4d7
@@ -23,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Boss.unity
     guid: 0df921d5b4dfd554698333603b8663b2
-  - enabled: 1
-    path: Assets/Levels/Win.unity
-    guid: 1b97d6685e10e394c8984a7a37e82123
   m_configObjects: {}

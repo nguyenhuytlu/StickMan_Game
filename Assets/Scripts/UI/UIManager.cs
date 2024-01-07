@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,14 +8,28 @@ public class UIManager : MonoBehaviour
 {
     [Header("Game Over")]
     [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private AudioClip gameOverSound;
     [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
+    [Header("Game Win")]
+    [SerializeField] private GameObject winScreen;
+    [SerializeField] private AudioClip winSound;
 
+    public void GameOver()
+    {
+        gameOverScreen.SetActive(true);
+        SoundManager.instance.PlaySound(gameOverSound);
+    }
+    public void GameWin()
+    {
+        gameOverScreen.SetActive(true);
+        SoundManager.instance.PlaySound(gameOverSound);
+    }
 
     private void Awake()
     {
-        gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        
     }
 
     private void Update()
