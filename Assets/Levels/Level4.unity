@@ -3242,8 +3242,7 @@ Transform:
   m_LocalPosition: {x: -7.3004503, y: -9.487546, z: 0.011268863}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1279179828}
+  m_Children: []
   m_Father: {fileID: 1387033159}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126407836
@@ -15629,7 +15628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 408088095fd44e84b91ad20bc5e51233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 6
+  nextLevel: 7
 --- !u!4 &687261275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7854195461952830316, guid: 7915a67123f14654f8e224c57f2b0b5a, type: 3}
@@ -27484,31 +27483,31 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 125110313}
+    m_TransformParent: {fileID: 1387033159}
     m_Modifications:
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33333334
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.33333334
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.33333334
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13
+      value: -7.1054497
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: -8.8425455
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.007512576
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3570898391984108669, guid: 716897d470825344b940c7c07f6ffbd0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28636,7 +28635,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -30846,6 +30845,7 @@ Transform:
   - {fileID: 1080459470}
   - {fileID: 525892619}
   - {fileID: 125110313}
+  - {fileID: 1279179828}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397059679
@@ -31321,7 +31321,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5178e5344712cf1448141d17402d9cb6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c2893041c2663ff4ca9dda5ba501f67b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
