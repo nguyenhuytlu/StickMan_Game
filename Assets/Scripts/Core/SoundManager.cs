@@ -8,14 +8,14 @@ public class SoundManager : MonoBehaviour
     private AudioSource soundSource;
     private AudioSource musicSource;
     
-    private AudioSource source;
+    //private AudioSource source;
     
     private void Awake()
     {
-        instance = this;
-        source = GetComponent<AudioSource>();
+        //instance = this;
+        //source = GetComponent<AudioSource>();
         soundSource = GetComponent<AudioSource>();
-        musicSource = GetComponent<AudioSource>();
+        musicSource = transform.GetChild(0).GetComponent<AudioSource>();
 
         if (instance == null)
         {
@@ -30,7 +30,7 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySound(AudioClip _sound)
     {
-        source.PlayOneShot(_sound);
+        soundSource.PlayOneShot(_sound);
     }
     public void ChangeSoundVolume(float _change)
     {
