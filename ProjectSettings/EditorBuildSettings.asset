@@ -27,15 +27,6 @@ EditorBuildSettings:
     path: Assets/Levels/Level4.unity
     guid: 9b0c03d8660bca74ea7fdcdc375043a3
   - enabled: 1
-    path: Assets/Levels/Level4 PL2.unity
-    guid: b091b8413f53471428111d42c27f0847
-  - enabled: 1
     path: Assets/Levels/Boss.unity
     guid: 0df921d5b4dfd554698333603b8663b2
-  - enabled: 1
-    path: Assets/Levels/Boss PL2.unity
-    guid: a2901e76c944dfc4b88beafcccbbd286
-  - enabled: 1
-    path: Assets/Levels/Win.unity
-    guid: 1b97d6685e10e394c8984a7a37e82123
   m_configObjects: {}
