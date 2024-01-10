@@ -1,46 +1,43 @@
 fileFormatVersion: 2
-guid: eedab6e174426ff4296188f3538d469d
+guid: b051b6173d6e3a548895c354a884b421
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: 21300000
-    second: knight_attack_0
+    second: dragon_walk_0
   - first:
       213: 21300002
-    second: knight_attack_1
+    second: dragon_walk_1
   - first:
       213: 21300004
-    second: knight_attack_2
+    second: dragon_walk_2
   - first:
       213: 21300006
-    second: knight_attack_3
+    second: dragon_walk_3
   - first:
       213: 21300008
-    second: knight_attack_4
+    second: dragon_walk_4
   - first:
       213: 21300010
-    second: knight_attack_5
+    second: dragon_walk_5
   - first:
       213: 21300012
-    second: knight_attack_6
+    second: dragon_walk_6
   - first:
       213: 21300014
-    second: knight_attack_7
+    second: dragon_walk_7
   - first:
       213: 21300016
-    second: knight_attack_8
+    second: dragon_walk_8
   - first:
       213: 21300018
-    second: knight_attack_9
+    second: dragon_walk_9
   - first:
       213: 21300020
-    second: knight_attack_10
+    second: dragon_walk_10
   - first:
       213: 21300022
-    second: knight_attack_11
-  - first:
-      213: 21300024
-    second: knight_attack_12
+    second: dragon_walk_11
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -87,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: knight_attack_0
+      name: dragon_walk_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 150
-        height: 150
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,13 +167,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_1
+      name: dragon_walk_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 600
-        width: 150
-        height: 150
+        x: 100
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,13 +188,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_2
+      name: dragon_walk_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 600
-        width: 150
-        height: 150
+        x: 200
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,13 +209,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_3
+      name: dragon_walk_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 600
-        width: 150
-        height: 150
+        x: 300
+        y: 300
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,13 +230,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_4
+      name: dragon_walk_4
       rect:
         serializedVersion: 2
-        x: 600
-        y: 600
-        width: 150
-        height: 150
+        x: 0
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,13 +251,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_5
+      name: dragon_walk_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 450
-        width: 150
-        height: 150
+        x: 100
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,13 +272,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_6
+      name: dragon_walk_6
       rect:
         serializedVersion: 2
-        x: 150
-        y: 450
-        width: 150
-        height: 150
+        x: 200
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -296,13 +293,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_7
+      name: dragon_walk_7
       rect:
         serializedVersion: 2
         x: 300
-        y: 450
-        width: 150
-        height: 150
+        y: 200
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,13 +314,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_8
+      name: dragon_walk_8
       rect:
         serializedVersion: 2
-        x: 450
-        y: 450
-        width: 150
-        height: 150
+        x: 0
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,13 +335,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_9
+      name: dragon_walk_9
       rect:
         serializedVersion: 2
-        x: 600
-        y: 450
-        width: 150
-        height: 150
+        x: 100
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,13 +356,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_10
+      name: dragon_walk_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 300
-        width: 150
-        height: 150
+        x: 200
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,13 +377,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: knight_attack_11
+      name: dragon_walk_11
       rect:
         serializedVersion: 2
-        x: 150
-        y: 300
-        width: 150
-        height: 150
+        x: 300
+        y: 100
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,27 +393,6 @@ TextureImporter:
       bones: []
       spriteID: 63305410000000000800000000000000
       internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: knight_attack_12
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 300
-        width: 150
-        height: 150
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -432,19 +408,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      knight_attack_0: 21300000
-      knight_attack_1: 21300002
-      knight_attack_10: 21300020
-      knight_attack_11: 21300022
-      knight_attack_12: 21300024
-      knight_attack_2: 21300004
-      knight_attack_3: 21300006
-      knight_attack_4: 21300008
-      knight_attack_5: 21300010
-      knight_attack_6: 21300012
-      knight_attack_7: 21300014
-      knight_attack_8: 21300016
-      knight_attack_9: 21300018
+      dragon_walk_0: 21300000
+      dragon_walk_1: 21300002
+      dragon_walk_10: 21300020
+      dragon_walk_11: 21300022
+      dragon_walk_2: 21300004
+      dragon_walk_3: 21300006
+      dragon_walk_4: 21300008
+      dragon_walk_5: 21300010
+      dragon_walk_6: 21300012
+      dragon_walk_7: 21300014
+      dragon_walk_8: 21300016
+      dragon_walk_9: 21300018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
