@@ -3082,7 +3082,7 @@ GameObject:
   - component: {fileID: 530906193}
   - component: {fileID: 530906195}
   - component: {fileID: 530906194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3371,7 @@ GameObject:
   - component: {fileID: 620074354}
   - component: {fileID: 620074356}
   - component: {fileID: 620074355}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3604,7 +3604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 629783454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5827,7 +5827,7 @@ GameObject:
   - component: {fileID: 941868100}
   - component: {fileID: 941868102}
   - component: {fileID: 941868101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8082,7 +8082,7 @@ GameObject:
   - component: {fileID: 1416407160}
   - component: {fileID: 1416407162}
   - component: {fileID: 1416407161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11129,7 +11129,7 @@ GameObject:
   - component: {fileID: 1843334724}
   - component: {fileID: 1843334726}
   - component: {fileID: 1843334725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11595,7 +11595,7 @@ GameObject:
   - component: {fileID: 1916363890}
   - component: {fileID: 1916363892}
   - component: {fileID: 1916363893}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
