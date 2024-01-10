@@ -13522,6 +13522,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 137674701926372909, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
+      propertyPath: fireBalls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137674701926372909, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: fireBalls.Array.data[0]
       value: 
       objectReference: {fileID: 244835042}
@@ -13567,7 +13571,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 933c1445da80b9348b87f132b258ac5e, type: 3}
     - target: {fileID: 931464834656872371, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: extraJumps
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1361953903104366340, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: m_LocalPosition.x
