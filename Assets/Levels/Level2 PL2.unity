@@ -2646,7 +2646,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 453530855}
     m_Modifications:
     - target: {fileID: 632433488588652995, guid: bc5f770b5e4ba2b4e86acce4c47806dd, type: 3}
       propertyPath: m_Name
@@ -2697,6 +2697,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc5f770b5e4ba2b4e86acce4c47806dd, type: 3}
+--- !u!4 &420055712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8151065730905665276, guid: bc5f770b5e4ba2b4e86acce4c47806dd, type: 3}
+  m_PrefabInstance: {fileID: 420055711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &449182295
 GameObject:
   m_ObjectHideFlags: 0
@@ -2813,6 +2818,7 @@ Transform:
   - {fileID: 1626135293}
   - {fileID: 1788437566}
   - {fileID: 674432882}
+  - {fileID: 420055712}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &457075473
@@ -8342,7 +8348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209403540}
   m_Layer: 0
-  m_Name: ZoneDie
+  m_Name: DieZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14670,4 +14676,3 @@ SceneRoots:
   - {fileID: 677259332}
   - {fileID: 453530855}
   - {fileID: 1209403540}
-  - {fileID: 420055711}
