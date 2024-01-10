@@ -21,17 +21,20 @@ EditorBuildSettings:
     path: Assets/Levels/Level2.unity
     guid: 1e821f7178f39864ca78b02c23d3d4d7
   - enabled: 1
+    path: Assets/Levels/Level2 PL2.unity
+    guid: e3f726e05bd71284a812f3c05f719afd
+  - enabled: 1
     path: Assets/Levels/Level3.unity
     guid: e6369ad5986baca4fbead2fd5da8beae
   - enabled: 1
     path: Assets/Levels/Level4.unity
     guid: 9b0c03d8660bca74ea7fdcdc375043a3
   - enabled: 1
-    path: Assets/Levels/Boss.unity
-    guid: 0df921d5b4dfd554698333603b8663b2
-  - enabled: 1
     path: Assets/Levels/Level4 PL2.unity
     guid: 8762df60a05cf964a9ec33322f25cacd
+  - enabled: 1
+    path: Assets/Levels/Boss.unity
+    guid: 0df921d5b4dfd554698333603b8663b2
   - enabled: 1
     path: Assets/Levels/Boss PL2.unity
     guid: 31636cc3ceb212547b8d74daaee67ad3
