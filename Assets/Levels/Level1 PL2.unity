@@ -7925,6 +7925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 478634272629716503, guid: 838f5168ca8433a4092870dd46fb4ea1, type: 3}
+      propertyPath: extraJumps
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 564405860516944178, guid: 838f5168ca8433a4092870dd46fb4ea1, type: 3}
       propertyPath: m_Name
       value: Player2
@@ -7975,7 +7979,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6471437367502801510, guid: 838f5168ca8433a4092870dd46fb4ea1, type: 3}
       propertyPath: fireBalls.Array.size
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6471437367502801510, guid: 838f5168ca8433a4092870dd46fb4ea1, type: 3}
       propertyPath: fireBalls.Array.data[0]
