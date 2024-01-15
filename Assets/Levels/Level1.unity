@@ -825,6 +825,7 @@ Transform:
   - {fileID: 957473617}
   - {fileID: 927193830}
   - {fileID: 616080197}
+  - {fileID: 1350112201}
   m_Father: {fileID: 120889438}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &162169323
@@ -4480,7 +4481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 408088095fd44e84b91ad20bc5e51233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 6
+  nextLevel: 4
 --- !u!61 &769222908
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4513,7 +4514,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009678364, y: -0.2913201}
+  m_Offset: {x: -0.0022621155, y: -0.2913201}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4524,7 +4525,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.40962315, y: 2.085912}
+  m_Size: {x: 1.842514, y: 2.085912}
   m_EdgeRadius: 0
 --- !u!1 &827733421
 GameObject:
@@ -7217,7 +7218,7 @@ GameObject:
   - component: {fileID: 1350112201}
   - component: {fileID: 1350112200}
   m_Layer: 0
-  m_Name: TX Village Props - Road Sign 01
+  m_Name: BienBao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7283,12 +7284,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350112199}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.99, y: -2.62, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.8099995, y: -2.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 154632501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351150701
 GameObject:
@@ -13521,6 +13522,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 137674701926372909, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
+      propertyPath: fireBalls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137674701926372909, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: fireBalls.Array.data[0]
       value: 
       objectReference: {fileID: 244835042}
@@ -13566,7 +13571,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 933c1445da80b9348b87f132b258ac5e, type: 3}
     - target: {fileID: 931464834656872371, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: extraJumps
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1361953903104366340, guid: 186aedabf5702f043bbe06212f4cf936, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13632,4 +13637,3 @@ SceneRoots:
   - {fileID: 303184894}
   - {fileID: 120889438}
   - {fileID: 2082968138}
-  - {fileID: 1350112201}
